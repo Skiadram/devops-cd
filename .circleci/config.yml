@@ -101,7 +101,7 @@ jobs:
       - checkout
       - run:
           name: Heroku Deploy
-          command: git push https://heroku/$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git main && heroku open
+          command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git main && heroku open
       - run:
           name: Smoke Test
           command: 
