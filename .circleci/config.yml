@@ -101,7 +101,7 @@ jobs:
       - checkout
       - run:
           name: Heroku Deploy
-          command: git push heroku main && heroku open 
+          command: git push heroku main
       - run:
           name: Smoke Test
           command: 
