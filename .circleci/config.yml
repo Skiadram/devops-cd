@@ -101,7 +101,7 @@ jobs:
       - checkout
       - run:
           name: Heroku Deploy
-          command: echo todo && false
+          command: git push heroku main && heroku open 
       - run:
           name: Smoke Test
           command: 
