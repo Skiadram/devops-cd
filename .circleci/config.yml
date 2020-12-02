@@ -54,7 +54,7 @@ jobs:
           at: /tmp
       - run:
           name: Deploy app
-          command: sudo npm install -g --silent netlify-cli
+          command: npm install -g --silent netlify-cli
                    netlify deploy --prod --auth $NETLIFY_AUTH_TOKEN --dir=/tmp/server-doc --site $NETLIFY_SITE_ID
   back-test-unit:
     docker:
